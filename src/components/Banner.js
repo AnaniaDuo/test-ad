@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImage from "../assets/img/header-img-anh.png";
 
 function Banner() {
-  const toRotate = ["Web Developer"];
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(200 - Math.random() * 20);
-  const period = 500;
-
   // useEffect(() => {
   //   let ticker = setInterval(() => {
   //     tick();
@@ -50,12 +43,7 @@ function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              Hi! I'm Anh <br />{" "}
-              {text ? (
-                <span className="wrap">Web Developer</span>
-              ) : (
-                <span className="invisible">text</span>
-              )}
+              Hi! I'm Anh <br /> <span className="wrap">Web Developer</span>
             </h1>
             <p>
               My nick name is Kaia. I'm a full-stack developer based in Maine,
