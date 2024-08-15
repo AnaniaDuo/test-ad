@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import logo from "../assets/img/logo-anh.svg";
+import logo from "../assets/img/logo-anh.svg";
 import SocialButton from "./SocialButtons";
 
 export default function NavBar() {
@@ -29,7 +29,7 @@ export default function NavBar() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          {/* <img src={logo} atl="Logo" /> */}anh
+          <img src={logo} atl="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
