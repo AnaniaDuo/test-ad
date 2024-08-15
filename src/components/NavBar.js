@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import logo from "../assets/img/logo-anh.svg";
-// import SocialButton from "./SocialButtons";
+import SocialButton from "./SocialButtons";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -65,7 +65,7 @@ export default function NavBar() {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            {/* <SocialButton /> */} social button
+            <SocialButton />
             <a href="#section">
               <button className="vvd">
                 <span>Let's Connect</span>
